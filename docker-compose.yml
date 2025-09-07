@@ -6,7 +6,7 @@ volumes:
 
 services:
   postgres:
-    image: pspn8n:latest
+    image: postgres:15
     restart: always
     environment:
       - POSTGRES_USER
@@ -24,7 +24,7 @@ services:
       retries: 10
 
   n8n:
-    image: image: jenercruz/n8n-personalizado:latest
+    image: image: n8nio/n8n:latest
     restart: always
     environment:
       - DB_TYPE=postgresdb
