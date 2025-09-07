@@ -20,9 +20,14 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push
+      -name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: jenercruz/pspn8n:
+          tags: jenercruz/ps:latest    
+
+
+
+
+
