@@ -1,1 +1,4 @@
-FROM docker .n8n.io/n8nio/n8n
+# Dockerfile
+FROM postgres:16
+
+COPY init-data.sh /docker-entrypoint-initdb.d/init-data.sh
